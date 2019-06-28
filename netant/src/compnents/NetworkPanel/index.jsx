@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import NetworkViewer from '../NetworkViewer'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -14,9 +15,13 @@ const useStyles = makeStyles(theme => ({
 const PropertyPanel = props => {
   const classes = useStyles()
 
+  const handleClick = evt => {
+    console.log('CLICK!!')
+  }
+
   return (
-    <div className={classes.root}>
-      <Typography variant="h2">Main</Typography>
+    <div className={classes.root} onClick={handleClick}>
+      <Typography variant="h2">Network</Typography>
     </div>
   )
 }

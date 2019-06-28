@@ -1,4 +1,5 @@
 import { all, call, put, takeLatest } from 'redux-saga/effects'
+import * as ncbiApi from '../api/ncbi'
 
 import {
   SEARCH_STARTED,
@@ -6,16 +7,17 @@ import {
   SEARCH_SUCCEEDED
 } from '../actions/search'
 
+import {
+  FETCH_PUB_STARTED,
+  FETCH_PUB_FAILED,
+  FETCH_PUB_SUCCEEDED
+} from '../actions/publication'
+
 export default function* rootSaga() {
   yield takeLatest(SEARCH_STARTED, watchSearch)
+  yield takeLatest(FETCH_PUB_STARTED, watchFetchPublication)
 }
 
-/**
- * Calls Cytoscape Search service and set state
- *
- * @param action
- * @returns {IterableIterator<*>}
- */
 function* watchSearch(action) {
   try {
     yield put({
@@ -29,3 +31,28 @@ function* watchSearch(action) {
     })
   }
 }
+
+function* watchFetchPublication(action) {
+  const pubmedId = action.payload
+
+  console.log('* Fetching details of PMID: ' + pubmedId)
+
+  const article = yield call(ncbiApi.fetchPublicationSummary, pubmedId)
+  console.log('* result: ', article)
+
+  try {
+    yield put({
+      type: FETCH_PUB_SUCCEEDED,
+      summary: article
+    })
+  } catch (e) {
+    console.warn('NCBI error:', e)
+    yield put({
+      type: FETCH_PUB_FAILED,
+      message: 'NCBI eFetch error',
+      error: e.message
+    })
+  }
+}
+
+const extractPubData = article => {}
