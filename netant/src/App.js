@@ -1,14 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Search from './compnents/Search'
+import React from 'react'
+import MainContainer from './containers/MainContainer'
 
-function App() {
-  return (
-    <div className="App">
-      <Search />
-    </div>
-  );
-}
+const App = props => <MainContainer {...props} />
 
-export default App;
+export { App }
