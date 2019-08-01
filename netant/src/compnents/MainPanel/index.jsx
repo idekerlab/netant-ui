@@ -5,7 +5,7 @@ import Split from 'react-split'
 import PropertyPanel from '../PropertyPanel'
 import NetworkPanel from '../NetworkPanel'
 
-const DEFAULT_RATIO = [60, 40]
+const DEFAULT_RATIO = [70, 30]
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -24,7 +24,7 @@ const MainPanel = props => {
       <Split
         sizes={DEFAULT_RATIO}
         direction="horizontal"
-        gutterSize={5}
+        gutterSize={15}
         className={classes.root}
       >
         <NetworkPanel {...props} />

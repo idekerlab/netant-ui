@@ -19,6 +19,7 @@ const Search = () => {
   const [value, setValue] = useState('')
 
   let onSuggestionsFetchRequested = ({ value }) => {
+
     const query = {
       suggest: {
         'term-suggest': {
@@ -36,6 +37,8 @@ const Search = () => {
       }
     }
 
+    console.log("Query:::", query)
+
     const settings = {
       method: 'post',
       headers: {
@@ -45,24 +48,33 @@ const Search = () => {
       body: JSON.stringify(query)
     }
 
+    console.log("SETTING:::", settings)
+
     fetch(ES_URL, settings)
       .then(res => {
+        console.log('FETCH_________+++++++++0', res)
+        if (!res.ok) {
+          throw Error(res.statusText);
+        }
         return res.json()
-      })
-      .then(json => {
+      }).then(json => {
         console.log('RES+++++++++0', json)
         const suggest = json.suggest['term-suggest'][0].options
         console.log('RES+++++++++', json, suggest)
         setSuggestions(suggest)
+      }).catch((err) => {
+        console.error('ERRRR:', err)
       })
+
   }
 
   useEffect(() => {
+    console.log("EFFECT:", value)
     onSuggestionsFetchRequested = debounce(DELAY, onSuggestionsFetchRequested)
   }, [value])
 
   const renderSuggestion = suggestion => {
-    // console.log("RENDER sug:", suggestion)
+    console.log("RENDER sug:", suggestion)
     const src = suggestion['_source']
 
     return (
@@ -77,6 +89,7 @@ const Search = () => {
   }
 
   const onChange = (event, { newValue }) => {
+    console.log('### Change', newValue)
     setValue(newValue)
   }
 
