@@ -1,0 +1,608 @@
+{
+  "parameters": {
+    "disease": "inflamm",
+    "drug": null,
+    "function": null,
+    "gene": "*",
+    "minfreqcutoff": 15,
+    "nummaxnode": 5,
+    "tasktype": "netant_task",
+    "uuid": "e99ca964-2640-45f5-bcf3-b441f696cfc1"
+  },
+  "result": {
+    "cx": [
+      {
+        "numberVerification": [
+          {
+            "longNumber": 281474976710655
+          }
+        ]
+      },
+      {
+        "metaData": [
+          {
+            "consistencyGroup": 1,
+            "elementCount": 24,
+            "idCounter": 24,
+            "name": "nodeAttributes",
+            "properties": [],
+            "version": "1.0"
+          },
+          {
+            "consistencyGroup": 1,
+            "elementCount": 12,
+            "idCounter": 12,
+            "name": "nodes",
+            "properties": [],
+            "version": "1.0"
+          },
+          {
+            "consistencyGroup": 1,
+            "elementCount": 11,
+            "idCounter": 11,
+            "name": "edges",
+            "properties": [],
+            "version": "1.0"
+          },
+          {
+            "consistencyGroup": 1,
+            "elementCount": 44,
+            "idCounter": 44,
+            "name": "edgeAttributes",
+            "properties": [],
+            "version": "1.0"
+          }
+        ]
+      },
+      {
+        "nodes": [
+          {
+            "@id": 0,
+            "n": "acute-phase response"
+          },
+          {
+            "@id": 1,
+            "n": "fumonisins"
+          },
+          {
+            "@id": 2,
+            "n": "chondroitin sulfates"
+          },
+          {
+            "@id": 3,
+            "n": "localization"
+          },
+          {
+            "@id": 4,
+            "n": "coproporphyrinogen oxidase"
+          },
+          {
+            "@id": 5,
+            "n": "leukocyte migration"
+          },
+          {
+            "@id": 6,
+            "n": "response to corticosteroid"
+          },
+          {
+            "@id": 7,
+            "n": "dinitrochlorobenzene"
+          },
+          {
+            "@id": 8,
+            "n": "monocyte activation"
+          },
+          {
+            "@id": 9,
+            "n": "nasal inflammation"
+          },
+          {
+            "@id": 10,
+            "n": "immune response"
+          },
+          {
+            "@id": 11,
+            "n": "abt-737"
+          }
+        ]
+      },
+      {
+        "edges": [
+          {
+            "@id": 0,
+            "i": "neighbor-of",
+            "s": 0,
+            "t": 10
+          },
+          {
+            "@id": 1,
+            "i": "neighbor-of",
+            "s": 1,
+            "t": 7
+          },
+          {
+            "@id": 2,
+            "i": "neighbor-of",
+            "s": 2,
+            "t": 7
+          },
+          {
+            "@id": 3,
+            "i": "neighbor-of",
+            "s": 3,
+            "t": 10
+          },
+          {
+            "@id": 4,
+            "i": "neighbor-of",
+            "s": 4,
+            "t": 7
+          },
+          {
+            "@id": 5,
+            "i": "neighbor-of",
+            "s": 5,
+            "t": 10
+          },
+          {
+            "@id": 6,
+            "i": "neighbor-of",
+            "s": 6,
+            "t": 10
+          },
+          {
+            "@id": 7,
+            "i": "neighbor-of",
+            "s": 7,
+            "t": 11
+          },
+          {
+            "@id": 8,
+            "i": "neighbor-of",
+            "s": 7,
+            "t": 10
+          },
+          {
+            "@id": 9,
+            "i": "neighbor-of",
+            "s": 8,
+            "t": 10
+          },
+          {
+            "@id": 10,
+            "i": "neighbor-of",
+            "s": 9,
+            "t": 10
+          }
+        ]
+      },
+      {
+        "nodeAttributes": [
+          {
+            "d": "string",
+            "n": "type",
+            "po": 0,
+            "v": "function"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 0,
+            "v": 0
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 1,
+            "v": "drug"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 1,
+            "v": 0
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 2,
+            "v": "drug"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 2,
+            "v": 0
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 3,
+            "v": "function"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 3,
+            "v": 0
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 4,
+            "v": "drug"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 4,
+            "v": 0
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 5,
+            "v": "function"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 5,
+            "v": 0.22210062702647926
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 6,
+            "v": "function"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 6,
+            "v": 0
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 7,
+            "v": "drug"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 7,
+            "v": 0.0002241635945255643
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 8,
+            "v": "function"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 8,
+            "v": 0
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 9,
+            "v": "disease"
+          },
+          {
+            "d": "integer",
+            "n": "pvalue",
+            "po": 9,
+            "v": 1
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 10,
+            "v": "function"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 10,
+            "v": 1.0000010530157533
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 11,
+            "v": "drug"
+          },
+          {
+            "d": "double",
+            "n": "pvalue",
+            "po": 11,
+            "v": 0
+          }
+        ]
+      },
+      {
+        "edgeAttributes": [
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 0,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 0,
+            "v": "PPI"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 0,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 0,
+            "v": "database"
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 1,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 1,
+            "v": "PPI"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 1,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 1,
+            "v": "database"
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 2,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 2,
+            "v": "PPI"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 2,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 2,
+            "v": "database"
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 3,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 3,
+            "v": "PPI"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 3,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 3,
+            "v": "database"
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 4,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 4,
+            "v": "PPI"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 4,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 4,
+            "v": "database"
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 5,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 5,
+            "v": "PPI"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 5,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 5,
+            "v": "database"
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 6,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 6,
+            "v": "PPI"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 6,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 6,
+            "v": "database"
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 7,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 7,
+            "v": "PPI"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 7,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 7,
+            "v": "database"
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 8,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 8,
+            "v": "infer"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 8,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 8,
+            "v": "treatment of severe atopic dermatitis by topical immune modulation using we present the results of a small uncontrolled pilot trial which suggest that contact sensitization to dinitrochlorobenzene and repeated weekly applications significantly improve the clinical status of severe atopic dermatitis in adults although no changes were noted in circulating levels of either lymphocyte subset populations or the serum cytokines assayed in this trial our observations may be due to topical immune modulation by dinitrochlorobenzene larger controlled studies of dinitrochlorobenzene treatment in atopic dermatitis are warranted ."
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 9,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 9,
+            "v": "PPI"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 9,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 9,
+            "v": "database"
+          },
+          {
+            "d": "string",
+            "n": "pm_title",
+            "po": 10,
+            "v": "Characterizing Cancer Drug Response and Biological Correlates: A Geometric Network Approach"
+          },
+          {
+            "d": "string",
+            "n": "type",
+            "po": 10,
+            "v": "infer"
+          },
+          {
+            "d": "string",
+            "n": "pm_id",
+            "po": 10,
+            "v": "29686393"
+          },
+          {
+            "d": "string",
+            "n": "sent",
+            "po": 10,
+            "v": ""
+          }
+        ]
+      },
+      {
+        "status": [
+          {
+            "error": "",
+            "success": true
+          }
+        ]
+      }
+    ],
+    "loadtime": 35.6101911068,
+    "querytime": 418.604683876
+  },
+  "status": "done"
+}
