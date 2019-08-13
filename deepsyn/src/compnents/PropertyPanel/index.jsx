@@ -9,10 +9,10 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     overflowY: 'scroll',
-
+    backgroundColor: '#EFEFEF',
     width: '100%',
-    height: '100%',
-    backgroundColor: '#EFEFEF'
+    height: '100vh'
+
   },
   title: {
     display: 'flex',
@@ -33,7 +33,7 @@ const PropertyPanel = props => {
 
   const getCards = () => {
     const cards = []
-    let count = 10
+    let count = 3
     while (count--) {
       cards.push(<PublicationCard key={count} {...props} />)
     }

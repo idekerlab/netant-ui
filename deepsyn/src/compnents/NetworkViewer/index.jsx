@@ -6,13 +6,13 @@ let cyInstance = null
 
 const PRESET_LAYOUT = {
   name: 'preset',
-  padding: 6
+  padding: 6,
 }
 
 const COCENTRIC_LAYOUT = {
   name: 'concentric',
   padding: 6,
-  minNodeSpacing: 100
+  minNodeSpacing: 100,
 }
 
 const COSE_SETTING = {
@@ -24,12 +24,10 @@ const COSE_SETTING = {
   nodeOverlap: 400000,
   idealEdgeLength: function(edge) {
     return 10
-  }
+  },
 }
 
-
 const NetworkViewer = props => {
-
   useEffect(() => {
     if (cyInstance === undefined || cyInstance === null) {
       return
@@ -80,20 +78,17 @@ const NetworkViewer = props => {
     }
   }, [])
 
-
-
-  const {results} = props.search
+  const { results } = props.search
   let cyjs = {
     data: {
-      name: 'unknown'
+      name: 'unknown',
     },
     elements: {
       nodes: [],
-      edges: []
-    }
+      edges: [],
+    },
   }
   if (results === null || results === undefined) {
-    
   } else {
     cyjs = results.network
   }
@@ -101,7 +96,7 @@ const NetworkViewer = props => {
   const networkAreaStyle = {
     width: '100%',
     height: '100%',
-    background: 'red'
+    background: 'red',
   }
 
   const isLayoutAvailable = cyjs.isLayout

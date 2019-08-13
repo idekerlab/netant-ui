@@ -19,13 +19,14 @@ const fetchPublicationSummary = (pmid: string) => {
 }
 
 enum Tags {
-  ArticleTitle,
-  Abstract,
-  Author,
-  Journal,
+  ArticleTitle = 'ArticleTitle',
+  Abstract = 'Abstract',
+  Author = 'Author',
+  Journal = 'Journal'
 }
 
 const convertArticle = article => {
+  console.log('TAG = ', Tags.Abstract)
   const abstract = article.getElementsByTagName(Tags.Abstract)[0].textContent
   const title = article.getElementsByTagName(Tags.ArticleTitle)[0].textContent
   const authors = article.getElementsByTagName(Tags.Author)

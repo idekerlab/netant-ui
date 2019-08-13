@@ -1437,17 +1437,17 @@
   resolved "https://registry.yarnpkg.com/@types/jest-diff/-/jest-diff-20.0.1.tgz#35cc15b9c4f30a18ef21852e255fdb02f6d59b89"
   integrity sha512-yALhelO3i0hqZwhjtcr6dYyaLoCHbAMshwtj6cGxTvHZAKXHsYGdff6E8EPw3xLKY0ELUTQ69Q1rQiJENnccMA==
 
-"@types/jest@24.0.16":
-  version "24.0.16"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.16.tgz#8d3e406ec0f0dc1688d6711af3062ff9bd428066"
-  integrity sha512-JrAiyV+PPGKZzw6uxbI761cHZ0G7QMOHXPhtSpcl08rZH6CswXaaejckn3goFKmF7M3nzEoJ0lwYCbqLMmjziQ==
+"@types/jest@24.0.17":
+  version "24.0.17"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.17.tgz#b66ea026efb746eb5db1356ee28518aaff7af416"
+  integrity sha512-1cy3xkOAfSYn78dsBWy4M3h/QF/HeWPchNFDjysVtp3GHeTdSmtluNnELfCmfNRRHo0OWEcpf+NsEJQvwQfdqQ==
   dependencies:
     "@types/jest-diff" "*"
 
-"@types/node@12.6.9":
-  version "12.6.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.9.tgz#ffeee23afdc19ab16e979338e7b536fdebbbaeaf"
-  integrity sha512-+YB9FtyxXGyD54p8rXwWaN1EWEyar5L58GlGWgtH2I9rGmLGBQcw63+0jw+ujqVavNuO47S1ByAjm9zdHMnskw==
+"@types/node@12.7.0":
+  version "12.7.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.0.tgz#545dde2a1a5c27d281cfb8308d6736e0708f5d6c"
+  integrity sha512-vqcj1MVm2Sla4PpMfYKh1MyDN4D2f/mPIZD7RdAGqEsbE+JxfeqQHHVbRDQ0Nqn8i73gJa1HQ1Pu3+nH4Q0Yiw==
 
 "@types/prop-types@*":
   version "15.7.1"
@@ -8519,6 +8519,14 @@ react-scripts@3.0.1:
   optionalDependencies:
     fsevents "2.0.6"
 
+react-split-grid@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-split-grid/-/react-split-grid-1.0.2.tgz#86e6fd9e93a62a7c8fa209a8fded05d478741508"
+  integrity sha512-4ju4s48L/y+LqWXynh3rEaWB7Fsq7HpQY1xxUcIkI+kW9grmz3qL5N1MoJa1SX6fkBfUcSgdfARynJYzb/9tyg==
+  dependencies:
+    prop-types "^15.5.7"
+    split-grid "^1.0.9"
+
 react-split@^2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/react-split/-/react-split-2.0.7.tgz#083b26edf208daefdc9a6638f1e0836be727acb2"
@@ -9377,6 +9385,11 @@ spdy@^4.0.0:
     http-deceiver "^1.2.7"
     select-hose "^2.0.0"
     spdy-transport "^3.0.0"
+
+split-grid@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/split-grid/-/split-grid-1.0.9.tgz#d946e4d6d1767a98d6b1a97b338fc60e1f1bc930"
+  integrity sha512-D7Tgibf7ksIEZKxmAKbXb7kKFANcXRj9j2VgM097KIr146zMXErt9MIHQeEiRxL+HM7WwkJdDyPTxDDsSVUSBA==
 
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"

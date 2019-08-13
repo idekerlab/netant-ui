@@ -1,19 +1,40 @@
 import React, { useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Split from 'react-split'
-
+import LeftPanel from './LeftPanel'
 import PropertyPanel from '../PropertyPanel'
-import NetworkPanel from '../NetworkPanel'
+import SearchPanel from '../SearchPanel'
 
 const DEFAULT_RATIO = [70, 30]
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
+    height: '100%',
     width: '100%',
-    height: '100vh',
-    backgroundColor: '#EEEEFF'
-  }
+    boxSizing: 'border-box',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(5, 1fr)',
+    gridGap: 0,
+    gridAutoRows: 'minmax(100vh, auto)',
+  },
+  search: {
+    backgroundColor: '#FFFFFF',
+    boxSizing: 'border-box',
+    gridColumn: '1 / 2',
+    gridRow: 1,
+  },
+  left: {
+    backgroundColor: 'teal',
+    boxSizing: 'border-box',
+    gridColumn: '2/5',
+    gridRow: 1,
+  },
+  right: {
+    backgroundColor: 'orange',
+    boxSizing: 'border-box',
+    gridColumn: '5/6',
+    gridRow: 1,
+  },
 }))
 
 const MainPanel = props => {
@@ -21,15 +42,13 @@ const MainPanel = props => {
 
   return (
     <div className={classes.root}>
-      <Split
-        sizes={DEFAULT_RATIO}
-        direction="horizontal"
-        gutterSize={15}
-        className={classes.root}
-      >
-        <NetworkPanel {...props} />
+      <div className={classes.search}>
+        <SearchPanel {...props} />
+      </div>
+      <div className={classes.left}></div>
+      <div className={classes.right}>
         <PropertyPanel {...props} />
-      </Split>
+      </div>
     </div>
   )
 }

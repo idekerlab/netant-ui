@@ -8,7 +8,7 @@ const DELAY = 500 // ms
 
 const ES_URL = 'http://localhost:9200/netant-terms/_search'
 
-const Search = () => {
+const SearchPanel = () => {
   const baseStyle = {
     height: '100%',
     width: '100%'
@@ -105,7 +105,7 @@ const Search = () => {
 
   return (
     <div className="container">
-      <h1>NetAnt Input Demo</h1>
+      <h1>DeepSyn</h1>
       <Autosuggest
         suggestions={suggestions}
         onSuggestionsFetchRequested={onSuggestionsFetchRequested}
@@ -118,4 +118,4 @@ const Search = () => {
   )
 }
 
-export default Search
+export default SearchPanel
